@@ -9,7 +9,7 @@ calculateBtn.addEventListener("click", () => {
   // Logging the date components for verification
   console.log(dateEntry);
   yearsDOB = dateEntry[0];
-  monthsDOB = dateEntry[1];
+  let monthsDOB = dateEntry[1];
   daysDOB = dateEntry[2];
   console.log(daysDOB, monthsDOB, yearsDOB);
 
@@ -37,7 +37,7 @@ calculateBtn.addEventListener("click", () => {
   }
 
   // Handling scenarios where birth day is ahead of current day
-  if (daysDOB > days) {
+  if (daysDOB > date.getDate()) {
     document.getElementById("month").innerHTML = month - 1;
     document.getElementById("day").innerHTML = days + 31;
 
