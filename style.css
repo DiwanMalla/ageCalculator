@@ -1,0 +1,61 @@
+/* Setting background color for the body */
+body {
+  background-color: #8533ff;
+}
+
+/* Flex container for centering content */
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Stack items vertically */
+}
+
+/* Styling for input container */
+.input {
+  width: 17rem;
+  background-color: white;
+  padding: 1.6rem;
+  border-radius: 1rem;
+}
+
+/* Styling for the input date field */
+#inputDate {
+  width: 11rem;
+  height: 1.7rem;
+  border-radius: 0.5rem;
+}
+
+/* Styling for the calculate button */
+#calculateBtn {
+  background-color: #8533ff;
+  color: white;
+  margin-left: 0.4rem;
+  height: 1.7rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/* Styling for the output section */
+.output {
+  display: flex; /* Display output elements in a row */
+}
+
+/* Styling for individual sections (years, months, days) */
+#years,
+#months,
+#days {
+  background-color: white;
+  margin: 1.2rem;
+  width: 5rem;
+  text-align: center;
+  border-radius: 0.2rem;
+}
+
+/* Styling for the year, month, and day text */
+#year,
+#month,
+#day {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
